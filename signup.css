@@ -1,0 +1,115 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background: blueviolet;
+}
+
+.container .box {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: black;
+}
+
+.heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: 10px;
+    color: blueviolet;
+}
+
+
+.box h3 .heading {
+    position: absolute;
+    width: 90px;
+    height: 6px;
+    background: blueviolet;
+    border-radius: 10px;
+}
+
+.box form .input_box {
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.box form .input_box input {
+    width: 95%;
+    font-size: 19px;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+}
+
+.box form .input_box label {
+    position: absolute;
+    left: 8px;
+    top: -12px;
+    font-size: 20px;
+    background-color: #fff;
+    font-weight: bold;
+    padding: 0px 10px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.box form .input_box input:focus+label,
+.box form .input_box input:valid+label {
+    top: -20px;
+    color: blueviolet;
+}
+
+.box form button {
+    width: 100%;
+    font-size: 30px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 200px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background: blueviolet;
+    transition: 0.2s;
+}
+
+.box form .link {
+    text-align:center;
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.box form .link a,
+.box form .Login_link a,
+.box form .contact_link a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #8a2be2;
+}
+
+.box form .Login_link,
+.box form .contact_link {
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.box form .link a:hover,
+.box form .Login_link a:hover,
+.box form .contact_link a:hover {
+    text-decoration: underline;
+}
